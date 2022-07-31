@@ -1,0 +1,40 @@
+$(document).ready(function(){
+    $("#submit-form").validate({
+        rules:{
+            first_name:{
+                required:true,
+                minlength:4
+            },
+            last_name:{
+                required:true,
+                minlength:4
+            },
+            email:{
+                required:true,
+                email:true,
+                com:true
+            },
+            password:{
+                required:true,
+                minlength:6
+            }
+        }
+        
+    })
+})
+
+$(document).ready(function(){
+    $("#login-form").validate({
+        rules:{
+            user_name:{
+                required:true,
+                minlength:4
+            },
+            email:{
+                required:true,
+                email:true,
+                com:true
+            }
+        }
+    })
+})
